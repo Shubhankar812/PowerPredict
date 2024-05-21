@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RemainingUsefulLife.Pages.InputPage"
+             Title="InputPage"
+             BackgroundColor="White"
+             >
+    <ContentPage.ToolbarItems VerticalOptions="Start" >
+
+        <ToolbarItem x:Name="UserImg" Priority="0" />
+    </ContentPage.ToolbarItems>
+
+    <ScrollView>
+        <StackLayout Margin="20" Padding="40" Spacing="50" BackgroundColor="White">
+            <Label x:Name="UserName" FontSize="Large" HorizontalTextAlignment="Center" />
+            <Entry x:Name="ft1" Placeholder="Max Voltage Discharge (V.)"  />
+            <Entry x:Name="ft2"  Placeholder="Min Voltage Charge (V.)" />
+            <Entry x:Name="ft3" Placeholder="Time at 4.15 V" />
+            <Entry x:Name="ft4" Placeholder="Time constant current" />
+            <Entry x:Name="ft5" Placeholder="Charging time" />
+            <Button x:Name="submitBtn" Text="Submit" HorizontalOptions="Center" VerticalOptions="Center" Clicked="submitBtn_Clicked" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

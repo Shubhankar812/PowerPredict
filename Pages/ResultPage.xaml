@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RemainingUsefulLife.Pages.ResultPage"
+             Title="ResultPage"
+             BackgroundColor="White">
+    <ContentPage.ToolbarItems VerticalOptions="Start" >
+
+        <ToolbarItem x:Name="UserImg" Priority="0" />
+    </ContentPage.ToolbarItems>
+    <VerticalStackLayout BackgroundColor ="White" HorizontalOptions="Center" VerticalOptions="Center" Spacing="30">
+
+        <Label x:Name="usrName" FontSize="Medium"/>
+
+        <Label x:Name="first" />
+        <Label x:Name="second" />
+        <Label x:Name="third" />
+        <Label x:Name="fourth" />
+        <Label x:Name="fifth" />
+
+        <Label x:Name="answer" FontAttributes="Bold" FontSize="Medium" />
+
+        <Label x:Name="percent_answer" TextColor="Black" 
+                FontSize="Medium"/>
+        <Button x:Name="save" Text="Save" Clicked="save_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
